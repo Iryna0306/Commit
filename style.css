@@ -7,6 +7,9 @@ body {
     background: linear-gradient(270deg, #00C6FF 0%, #0072FF 101.47%);
     font: 400 14px/1 'PT Sans', sans-serif;
     color: #fff;
+    max-width: 100%;
+    overflow-x: hidden;
+
 }
 
 a {
@@ -48,31 +51,37 @@ button {
 .container {
     max-width: 1084px;
     margin: auto;
-    padding: 40px 0;
-    position: relative;     
+    padding: 40px 0;     
 }
 
-.container::after {
+.inner {
+    max-width: 1084px;
+    min-height: 640px;
+    margin: auto;    
+    position: relative;
+}
+
+.inner::after {
     content: '';
     width: 738px;
-    height: 611px;
+    height: 696px;
     background: url('./img/1.svg')  no-repeat;
     opacity: .5;
     position: absolute;
-    top: 146px;
-    right: 754px;
+    top: 45px;
+    right: 756px;
     z-index: 1; 
 }
 
-.container::before {
+.inner::before {
     content: '';
     width: 738px;
-    height: 611px;
+    height: 356px;
     background: url('./img/2.svg')  no-repeat;
     opacity: .5;
     position: absolute;
-    top: 552px;
-    right: 742px;
+    top: 480px;
+    right: 756px;
     z-index: 1; 
 }
 
@@ -80,7 +89,7 @@ button {
     max-width: 1084px;
     margin: auto;
     padding: 128px 0px;
-    position: relative;  
+    position: relative; 
 }
 
 .main-container::after {
@@ -90,20 +99,20 @@ button {
     background: url('./img/3.svg')  no-repeat;
     opacity: .5;
     position: absolute;
-    top: -38px;
-    right: -634px;
+    top: -12px;
+    right: -642px;
     z-index: 1;
 }
 
 .main-container::before {
     content: '';
     width: 738px;
-    height: 611px;
+    height: 460px;
     background: url('./img/4.svg')  no-repeat;
     opacity: .8;
     position: absolute;
     top: 318px;
-    right: -770px;
+    right: -786px;
     z-index: 1;
 }
 
@@ -129,8 +138,8 @@ button {
     background: url('./img/Phone.png') no-repeat;
     position: absolute;
     top: -100px;
-    right: 446px;
-    z-index: 1;
+    right: 458px;
+    z-index: 3;
 }
 
 .main-header-nav {
