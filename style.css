@@ -59,7 +59,7 @@ button {
 }
 
 .header-nav {
-    min-width: 920px;
+    flex-grow: 1;
     justify-content: space-between;
 }
 
